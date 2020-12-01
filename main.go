@@ -32,6 +32,7 @@ func main() {
 		tong2.Put([]byte("52511985"),[]byte("翠花"))
 		return nil
 	})
+
 	//2、读取数据
 	db.View(func(tx *bolt.Tx) error {
 		//读取数据
