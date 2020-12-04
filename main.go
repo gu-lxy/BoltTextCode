@@ -37,6 +37,7 @@ func main() {
 	db.View(func(tx *bolt.Tx) error {
 		//读取数据
 		bucket := tx.Bucket([]byte("male"))
+
 		if bucket != nil {
 			panic("读取数据失败，请重试")
 		}
@@ -47,3 +48,5 @@ func main() {
 	})
 
 }
+
+
