@@ -21,7 +21,7 @@ func main() {
 			panic(err.Error())
 		}
 		//存储第一个男生信息
-		tong1.Put([]byte("516541565"),[]byte("于洪伟"))
+		tong1.Put([]byte("516541556"),[]byte("于洪伟"))
 		tong1.Put([]byte("516194985"),[]byte("隔壁老王"))
 
 		//tong2
@@ -41,7 +41,7 @@ func main() {
 		if bucket != nil {
 			panic("读取数据失败，请重试")
 		}
-		dataBytes := bucket.Get([]byte("516541565"))
+		dataBytes := bucket.Get([]byte("516541556"))
 		fmt.Println("读取到的数据：",dataBytes)
 
 		return nil
